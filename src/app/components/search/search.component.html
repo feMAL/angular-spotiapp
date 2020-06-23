@@ -1,0 +1,7 @@
+<div class="col mt-3">
+    <input class="w-100" type="text" placeholder="  ...Buscar Artistas" (keyup.enter)='searchArtist(search.value)' #search>
+</div>
+
+<app-loading class="m-4" *ngIf="loading" ></app-loading>
+
+<app-cards *ngIf="!loading" [items]="values"></app-cards>
