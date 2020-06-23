@@ -4,6 +4,6 @@ export const config = {
         newReleases: 'browse/new-releases',
         albumsByArtist: 'search'
     },
-    access_token: "Bearer BQAkWvG2IFTHXbg4SXiuFjFYGK3KUcBgxbmOINYiqKpGn6JANzyzjmmIOp8UCoTNFHkYXyF7p27J7KOOOfNs4G457mwDAZk0Knp53h0mZ86e-ZO7RRS846sF7i5qMUE50gv3A5Qy0591sfy2aQ_xKLY2sfH5OwI9yUkupQPsfnzUwVf-QVNUEe0"
+    access_token: "Bearer BQBXCBFh8IOhj4w1lk1fCzLHe9NpQfHtjG1zbP2Y9xAR_SjpL6k_CsGfKWYPLd2nqOfqF7jQbJxXkz22PuREg_oXZ-AsVldyepqAIItnuJxZctSZSXyFAFa-SxY2M24h0m0U3HNy-1-wI70MTCwSo5raND_hjvAK97T8hz4gp4KBVFxyyTgIwlU"
     
 }

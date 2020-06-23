@@ -43,4 +43,15 @@ export class SpotiappService {
       .pipe( map( data => data['albums'].items ) )
   }
 
+  getTopTracks(artist:string){
+    let url = config.url + `artists/${artist}/top-tracks?country=us`
+
+    let header = new HttpHeaders({
+      'Authorization': config.access_token
+    })
+    
+    return this._http.get(url,{headers:header})
+      .pipe( map( data => data['tracks']  ) )
+  }
+
 }

@@ -18,6 +18,7 @@ import { ArtistComponent } from './components/artist/artist.component';
 import { CardsComponent } from './shared/cards/cards.component';
 import { NoimagePipe } from './pipes/noimage.pipe';
 import { LoadingComponent } from './shared/loading/loading.component';
+import { UrlnonsafePipe } from './pipes/urlnonsafe.pipe';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { LoadingComponent } from './shared/loading/loading.component';
     ArtistComponent,
     CardsComponent,
     NoimagePipe,
-    LoadingComponent
+    LoadingComponent,
+    UrlnonsafePipe
   ],
   imports: [
     BrowserModule,

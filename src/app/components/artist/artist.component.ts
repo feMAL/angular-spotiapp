@@ -11,6 +11,7 @@ export class ArtistComponent implements OnInit {
 
   public artist:{}
   public loading=true
+  public tracks:[] = []
 
   constructor(private _rutaActiva:ActivatedRoute, private _spotiService:SpotiappService ) { }
   
@@ -20,9 +21,17 @@ export class ArtistComponent implements OnInit {
         .subscribe(artist => {
           this.loading = false
           this.artist = artist
-          console.log(artist)
+          this.getTracks(params.id)
         })
     })
+  }
+
+  getTracks(artist){
+    this._spotiService.getTopTracks(artist)
+      .subscribe(data=>{
+        this.tracks = data      
+        console.log(data)
+      })
   }
 
 }
